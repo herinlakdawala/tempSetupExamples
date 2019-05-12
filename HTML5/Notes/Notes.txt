@@ -1,0 +1,234 @@
+HTML 5 New Tags
+
+article			aside
+audio			canvas
+datalist		details
+summary			embed
+figure			figcaption
+footer			header
+hgroup			keygen
+mark			meter
+nav			output
+progress		ruby
+rt			rb
+section			video
+source			time
+wbr
+
+
+-------------------------------------------------
+New Input Types
+
+color			date		datetime
+datetime-local		email		file
+month			number		search
+range			tel		time
+url			week
+
+-------------------------------------------------
+New Global Attributes
+
+accesskey
+class
+	contenteditable
+	contextmenu (Firefox)
+	data-*
+dir
+	draggable
+	dropzone
+	hidden
+id
+lang
+	spellcheck
+style
+tabindex
+title
+	translate
+
+-------------------------------------------------
+
+New Form Attributes
+
+	autocomplete
+	novalidate
+
+-------------------------------------------------
+
+New Attributes for Input Types
+
+	autocomplete
+	autofocus
+	form
+	formaction
+	formmethod
+	formnovalidate
+	formtarget
+	formenctype
+	height and width (type=image)
+	list
+	maxlength
+	placeholder
+	step
+
+Validation Attributes in HTML 5
+	min
+	max
+	pattern (regex)		
+	required
+
+-------------------------------------------------
+
+Video		MP4, WebM, OGG
+
+Audio		MP3, WAV, OGG
+
+-------------------------------------------------
+
+New JavaScript API's
+
+Contacts		Selection
+SVG			Canvas
+Media			Forms
+FileAPI			DragDropAPI
+Gelocation		WebWorkers
+
+------------------------------------ Storage API's
+LocalStorage
+SessionStore
+WebSQLDB
+IndexedDB
+AppCache (Offline Apps)
+
+------------------------------------ Communication
+XMLHttpRequest - Level 2
+ServerSentEvents
+WebSockets
+
+
+---------------------------------------------------------------------------------------------
+CSS 3 Changes
+
+FontFace
+-------------
+Text Shadows
+-------------
+New CSS3 Selectors
+
+element1~element2	ul~p
+[attribute^=value]	img[src^=https]		Starts With
+[attribute$=value]	img[src$=jpg]		Ends With
+[attribute*=value]	img[src*=pic]		Contains
+
+Pseudo Class
+
+:first-child
+:last-child
+:nth-child(n)
+:nth-last-child(n)
+:only-child
+
+:first-of-type
+:last-of-type
+:nth-of-type(n)
+:only-of-type
+
+:checked
+:disabled
+:empty
+:invalid
+:optional
+:readonly
+:valid
+:required
+:target
+:in-range
+:out-of-range
+
+:root
+:not(selector)
+
+Pseuso Elements
+::after
+::before
+::first-letter
+::first-line
+::selection
+::backdrop
+::placeholder
+
+-------------
+Layouts
+
+	Column Layout
+
+-------------
+Background
+-------------
+Borders
+	border-radius
+	box-shadow
+	border-image
+
+-------------
+Color
+	rgba()
+	hsla()
+	gradient()
+
+-------------
+Transition
+
+-------------
+Transformation
+
+Translate - Move
+	translate(x, y)
+	translateX(x)
+	translateY(y)
+	translateZ(z)
+	translate3d(x,y,z)
+
+Rotate - Rotating
+	rotate(angle)
+	rotate3d(angle)
+	rotateX(angle)
+	rotateY(angle)
+	rotateZ(angle)
+
+Scale - Resizing
+	scale(x,y)	
+	scale3d(x,y,z)	
+	scaleX(x)	
+	scaleY(y)	
+	scaleZ(z)	
+
+Skew - Slant Effect
+	skew(xAngle,yAngle)
+	skewX(xAngle)
+	skewY(yAngle)
+
+Matrix - Custom - UserDefined
+	matrix(n,n,n,n,n,n)
+	matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+
+------------------------
+Media Queries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

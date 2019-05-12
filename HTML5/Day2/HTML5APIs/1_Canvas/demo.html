@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="400" height="300" style="border: 1px solid black"></canvas>
+    <img src="1.jpg" alt="1" id="img1">
+    <script>
+        function Draw() {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+
+            // Rectangle
+            // context.stokeStyle = "red";
+            // context.strokeRect(20, 30, 200, 40);
+
+            // context.fillStyle = "red";
+            // context.fillRect(20, 30, 200, 40);
+
+            // Arc
+            // context.arc(70, 110, 50, 0, Math.PI);
+            // context.stroke();
+            // context.fill();
+
+            // Path
+            // context.beginPath();
+            // context.moveTo(260, 75);
+            // context.arc(230, 75, 40, 0, 2 * Math.PI);
+            // context.clip();
+
+            // context.beginPath();
+            // context.rect(180, 55, 100, 40);
+            // context.fill();
+
+            // Text
+            // context.font = "40px Arial";
+            // context.fillText("Synechron", 10, 50);
+            // context.strokeStyle = "red";
+            // context.strokeText("Synechron", 10, 50);
+
+            // var lGrad = context.createLinearGradient(200, 0, 0, 0);
+            // lGrad.addColorStop(0.15, "red");
+            // lGrad.addColorStop(0.25, "blue");
+            // lGrad.addColorStop(0.50, "purple");
+            // lGrad.addColorStop(0.75, "green");
+            // lGrad.addColorStop(1, "yellow");
+
+            // context.fillStyle = lGrad;
+            // context.fillRect(20, 30, 200, 200);
+
+            // var rGrad = context.createRadialGradient(75, 50, 5, 0, 60, 100);
+            // rGrad.addColorStop(0.15, "red");
+            // rGrad.addColorStop(0.25, "blue");
+            // rGrad.addColorStop(0.50, "purple");
+            // rGrad.addColorStop(0.75, "green");
+            // rGrad.addColorStop(1, "yellow");
+
+            // context.fillStyle = rGrad;
+            // context.fillRect(20, 30, 200, 200);
+
+            var img = document.getElementById("img1");
+
+            img.onload = function () {
+                context.drawImage(img, 10, 10);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", Draw);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: red;
+            width: 75px;
+            height: 75px;
+        }
+
+        #div2 {
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" draggable="true" ondragstart="dragStart(event)"></div>
+    <div id="div2" ondragover="dragOver(event)" ondrop="drop(event)"></div>
+
+    <script>
+        function dragStart(ev){
+            ev.dataTransfer.setData("Id", ev.target.getAttribute('id'));
+        }
+
+        function dragOver(ev){
+            ev.preventDefault();
+        }
+
+        function drop(ev){
+            ev.preventDefault();
+            var src = ev.dataTransfer.getData("Id");
+            ev.target.appendChild(document.getElementById(src));
+        }
+    </script>
+
+    <!-- <script>
+        var s = "BAC";
+        console.log(typeof s);
+    </script> -->
+</body>
+
+</html>

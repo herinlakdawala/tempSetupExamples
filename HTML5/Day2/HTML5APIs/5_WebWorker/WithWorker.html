@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        var worker = new Worker('PiCalc.js');
+
+        worker.onmessage = function (e) {
+            document.getElementById("PiValue").innerHTML =
+                document.getElementById("PiValue").innerHTML + "<br/>" + e.data.result;
+        }
+
+        function LaunchPiWorker() {
+            worker.postMessage({
+                'value': document.getElementById("loop").value
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <label for="loop">
+        Enter the number of cycles:
+    </label>
+    <input type="number" id="loop" value="100" />
+    <input type="button" value="Calculate Pi" onclick="LaunchPiWorker()" />
+    <br />
+    <br />
+    <div id="PiValue">
+        PI value appears here
+    </div>
+</body>
+
+</html>

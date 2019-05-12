@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person(a) {
+            this.name = a;
+        }
+
+        Person.prototype.setName = function (a) {
+            this.name = a;
+        }
+
+        var p1 = new Person("Manish");
+        console.log(p1.name);
+        p1.setName("Abhijeet");
+        console.log(p1.name);
+
+        var p2 = new Person("Subodh");
+        console.log(p2.name);
+        p2.setName("Ramakant");
+        console.log(p2.name);
+
+    </script>
+</body>
+
+</html>

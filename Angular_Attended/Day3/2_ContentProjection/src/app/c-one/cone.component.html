@@ -1,0 +1,21 @@
+<h2 class="text-success">
+    This is Component One View.
+</h2>
+<button class="btn btn-success">Inside Component</button>
+<br /><br />
+<!-- <div class="row">
+    <div class="col-sm-5">
+        <ng-content></ng-content>
+    </div>
+</div> -->
+<div class="row">
+    <div class="col-sm-5">
+        <ng-content select=".btn-info"></ng-content>
+    </div>
+    <div class="col-sm-2">
+        <h2 class="text-success">From Component One</h2>
+    </div>
+    <div class="col-sm-5">
+        <ng-content select=".btn-warning"></ng-content>
+    </div>
+</div>

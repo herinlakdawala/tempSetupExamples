@@ -1,0 +1,5 @@
+@HostListener is Angular’s decorator method that’s used for listening to DOM events on the host element of both component and attribute directives.
+
+@HostListener sets the listeners once the directive is initialized and removes them automatically once the directive gets destroyed.
+
+@HostListener catches and listens to events from children or nested elements when they bubble up to the host element. Moreover, you can listen to events on global elements, but you should do so sparingly for performance reasons.

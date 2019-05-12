@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <img alt="Getting Image" id="myImage" />
+    <hr />
+    <input type="button" id="btnGet" value="Get Image" />
+
+    <script>
+        function handleClick() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/data/getimage/1");
+            xhr.responseType = "blob";
+
+            xhr.onload = function (e) {
+                if (this.status === 200) {
+                    console.log(this.response);
+                    var blob = new Blob([this.response], { type: "image/jpeg" });
+                    var img = document.getElementById("myImage");
+                    img.src = window.URL.createObjectURL(blob);
+                }
+            };
+
+            xhr.send();
+        }
+
+        function ContentLoaded() {
+            document.getElementById("btnGet").addEventListener('click', handleClick);
+        }
+
+        document.addEventListener("DOMContentLoaded", ContentLoaded);
+    </script>
+</body>
+</html>

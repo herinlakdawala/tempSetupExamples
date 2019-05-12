@@ -1,0 +1,23 @@
+{
+  "name": "typescript_demos",
+  "version": "1.0.0",
+  "description": "Demo for Typescript",
+  "private": true,
+  "scripts": {
+    "compile": "tsc -w",
+    "version": "tsc -v"
+  },
+  "author": "Manish",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "typescript": "3.4.1"
+  },
+  "dependencies": {
+    "@angular/core": "^7.2.12",
+    "@angular/forms": "^7.2.12",
+    "core-js": "2.6.5",
+    "jquery": "^3.3.1",
+    "systemjs": "^0.21.6"
+  }
+}

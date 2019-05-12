@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <video src="./assets/sample.mp4" width="340" height="240" autoplay controls></video> -->
+
+    <!-- <video width="340" height="240" autoplay controls>
+        <source src='./assets/sample.ogx' type="video/ogg" />
+        <source src='./assets/sample.mp4' type="video/mp4" />
+        <source src='./assets/sample.web' type="video/webm" />
+    </video> -->
+
+    <button id="btn">Play/Pause</button>
+    <video src="./assets/sample.mp4" width="340" height="240" id="vplayer" autoplay></video>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", ContentLoaded);
+
+        function ContentLoaded() {
+            console.log("ContentLoaded");
+            document.getElementById("btn").addEventListener("click", togglePlayback);
+        }
+
+        function togglePlayback() {
+            var vplayer = document.getElementById("vplayer");
+            console.log(vplayer);
+            console.log(vplayer.constructor.name);
+
+            if(vplayer.paused){
+                vplayer.play();
+            } else {
+                vplayer.pause();
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+1. Browser Sends request to the server
+2. On Response
+	a. Create DOM	(Document Object Model)
+	b. Create CSSOM (CSS Object Model)
+	c. Create Render Tree (DOM + CSSOM)
+	d. Layout - Finds the space and place to render elements
+	e. Painting - Startrs to fill pixel by pixel in the screen
+
+
+1. The User Interface
+2. Browser Engine
+3. Rendering Engine
+4. Networking
+5. UI Backend
+6. JavaScript Engine
+7. Data Storage

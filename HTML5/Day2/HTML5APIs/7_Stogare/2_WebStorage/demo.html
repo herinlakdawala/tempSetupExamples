@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h3>You have viewed this page
+        <span id="counter"></span> times. </h3>
+    <br />
+    <h3>In Current Session, You have viewed this page
+        <span id="scounter"></span> times. </h3>
+    <script>
+        function ContentLoaded() {
+            if (!localStorage.getItem('lStore'))
+                localStorage.setItem('lStore', 0);
+
+            if (!sessionStorage.getItem('sStore'))
+                sessionStorage.setItem('sStore', 0);
+
+            localStorage.setItem('lStore', parseInt(localStorage.getItem('lStore')) + 1);
+            sessionStorage.setItem('sStore', parseInt(sessionStorage.getItem('sStore')) + 1);
+
+            document.getElementById("counter").innerHTML =
+                localStorage.getItem('lStore');
+
+            document.getElementById("scounter").innerHTML =
+                sessionStorage.getItem('sStore');
+        }
+
+        window.addEventListener("DOMContentLoaded", ContentLoaded);
+    </script>
+</body>
+
+</html>

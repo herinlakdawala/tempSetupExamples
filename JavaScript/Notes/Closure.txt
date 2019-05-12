@@ -1,0 +1,5 @@
+A closure is a function or reference to a function together with a referencing environment — a table storing a reference to each of the non-local variables of that function.
+
+Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.
+
+A closure is a special kind of object that combines two things: a function, and the environment in which that function was created. The environment consists of any local variables that were in-scope at the time that the closure was created. 

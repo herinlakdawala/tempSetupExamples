@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        var html5 = {};
+        html5.webdb = {};
+        html5.webdb.db = null;
+
+        html5.webdb.open = function () {
+            html5.webdb.db = openDatabase("Todo", "1.0", "Todo Manager", 1024);
+        };
+
+        html5.webdb.createTable = function () {
+            var db = html5.webdb.db;
+            db.transaction(function (tx) {
+                tx.executeSql("CREATE TABLE IF NOT EXISTS todo(ID INTEGER PRIMARY KEY ASC, todo TEXT, added_on DATETIME)", []);
+            });
+        };
+
+        html5.webdb.addToDo = function (toDoText) {
+            var db = html5.webdb.db;
+            db.transaction(function (tx) {
+                tx.executeSql("INSERT INTO todo(todo,added_on) VALUES (?,?)", [toDoText, new Date()]);
+            });
+        };
+
+        html5.webdb.onError = function (tx, e) {
+            console.log("Error " + e.message);
+        };
+
+        html5.webdb.getAllItems = function (renderFunc) {
+            var db = html5.webdb.db;
+            db.transaction(function (tx) {
+                tx.executeSql("SELECT * FROM todo", [], renderFunc, html5.webdb.onError);
+            });
+        };
+
+        function loadToDoItems(tx, rs) {
+            var rows = "";
+            var todoItems = document.getElementById("todoItems");
+
+            for (var i = 0; i < rs.rows.length; i++) {
+                rows += renderTodo(rs.rows.item(i));
+            }
+
+            todoItems.innerHTML = rows;
+        };
+
+        html5.webdb.deleteToDo = function (id) {
+
+        };
+
+        function renderTodo(row) {
+            return '<li>' + row.todo + '</li>';
+        }
+
+        function init() {
+            html5.webdb.open();
+            html5.webdb.createTable();
+            html5.webdb.getAllItems(loadToDoItems);
+        };
+
+        function addToDo() {
+            var todo = document.getElementById("todo");
+            html5.webdb.addToDo(todo.value);
+            todo.value = "";
+            html5.webdb.getAllItems(loadToDoItems);
+        };
+    </script>
+</head>
+
+<body onload="init();">
+    <ul id="todoItems"></ul>
+    <form method="post" onsubmit="addToDo(); return false;" autocomplete="off">
+        <input type="text" name="todo" id="todo" placeholder="What you want to do?" style="width:200px;" />
+        <input type="submit" value="Add Item" />
+    </form>
+</body>
+
+</html>

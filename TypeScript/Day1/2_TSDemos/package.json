@@ -1,0 +1,18 @@
+{
+  "name": "typescript_demos",
+  "version": "1.0.0",
+  "description": "Demo for Typescript",
+  "private": true,
+  "scripts": {
+    "compile": "tsc -w",
+    "version": "tsc -v"
+  },
+  "author": "Manish",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.4.1"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5"
+  }
+}
