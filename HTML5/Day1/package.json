@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "HTML5 Demos",
   "private": true,
-  "author": "Manish",
+  "author": "Herin Lakdawala",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.3.1",
