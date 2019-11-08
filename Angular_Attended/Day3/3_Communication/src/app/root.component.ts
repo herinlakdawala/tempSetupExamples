@@ -65,7 +65,7 @@ export class RootComponent implements AfterViewInit {
 
     constructor() {
         this.data = 10;
-        this.pList = ["Manish", "Abhijeet", "Abhishek", "Kedar", "Sumeet"];
+        this.pList = ["Herin", "Abhijeet", "Abhishek", "Kedar", "Sumeet"];
         this.message = "";
     }
 

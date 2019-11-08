@@ -34,7 +34,7 @@ var BankAccount = (function () {
     return BankAccount;
 }());
 BankAccount.BankName = "ICICI";
-var a1 = new BankAccount(1, "Manish");
+var a1 = new BankAccount(1, "Herin");
 console.log("Bank Name: ", a1.BankName);
 console.log("Account Number: ", a1.AccountNumber);
 console.log("Accoun Holder Name: ", a1.AccountName);

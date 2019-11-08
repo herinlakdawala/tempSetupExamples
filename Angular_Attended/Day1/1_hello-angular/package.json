@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --hot",
     "build": "webpack --env prod"
   },
-  "author": "Manish Sharma",
+  "author": "Herin Lakdawala",
   "license": "ISC",
   "devDependencies": {
     "angular2-template-loader": "0.6.2",

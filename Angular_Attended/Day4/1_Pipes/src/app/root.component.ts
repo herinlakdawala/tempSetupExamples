@@ -38,9 +38,9 @@ export class RootComponent {
     }
 
     constructor() {
-        this.name = "manish sharma";
+        this.name = "herin lakdawala";
         this.today = new Date();
-        this.pList = ["Manish", "Abhijeet", "Kedar", "Avinash", "Mohit", "Ashish", "Ankur", "Kumud"];
+        this.pList = ["Herin", "Abhijeet", "Kedar", "Avinash", "Mohit", "Ashish", "Ankur", "Kumud"];
     }
 
     handleClick() {

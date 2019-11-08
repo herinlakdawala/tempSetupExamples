@@ -2,8 +2,8 @@
 //     console.log("Hello,", name);
 // }
 
-// Hello("Manish");
-// Hello("Manish", "Sharma");
+// Hello("Herin");
+// Hello("Herin", "Lakdawala");
 // Hello();
 
 // Optional Parameters (?)
@@ -11,7 +11,7 @@
 //     console.log("Hello,", name);
 // }
 
-// Hello("Manish");
+// Hello("Herin");
 // Hello();
 
 // function Add(a?: number, b?: number): number {

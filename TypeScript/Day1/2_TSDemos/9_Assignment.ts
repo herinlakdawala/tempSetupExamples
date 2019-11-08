@@ -8,7 +8,7 @@
 //         return strOrarr.slice().reverse();
 // }
 
-// console.log(Reverse("Manish"));
+// console.log(Reverse("Herin"));
 // console.log(Reverse(["PQR", "XYZ", "ABC"]));
 // console.log(Reverse(10));
 
@@ -16,7 +16,7 @@
 
 // var data: (number | string);
 // data = 10;
-// data = "Manish";
+// data = "Herin";
 
 function Reverse(str: string): Array<string>;
 function Reverse(strArr: string[]): Array<string>;
@@ -28,5 +28,5 @@ function Reverse(strOrarr: (string | string[])) {
         return strOrarr.slice().reverse();
 }
 
-console.log(Reverse("Manish"));
+console.log(Reverse("Herin"));
 console.log(Reverse(["PQR", "XYZ", "ABC"]));

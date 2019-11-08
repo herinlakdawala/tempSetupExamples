@@ -13,7 +13,7 @@
 // a = "ABC";
 // console.log(a);
 
-var i = "Manish";
+var i = "Herin";
 console.log("Before, i is:", i);
 
 for (var i = 0; i < 5; i++) {

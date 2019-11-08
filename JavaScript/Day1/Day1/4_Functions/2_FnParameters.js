@@ -2,7 +2,7 @@
 //     console.log("Hello,", name);
 // }
 
-// hello("Manish");
+// hello("Herin");
 // hello();
 // hello("Abhijeet", "Pune");
 
@@ -69,7 +69,7 @@
 // }
 
 // // hello();
-// hello("Manish");
+// hello("Herin");
 // hello("Abhijeet", "Pune");
 // hello("Abhijeet", "Pune", 411038);
 

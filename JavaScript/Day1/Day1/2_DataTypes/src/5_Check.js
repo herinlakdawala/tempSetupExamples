@@ -7,6 +7,6 @@ function hello(name, ...args) {
 }
 
 // hello();
-hello("Manish");
+hello("Herin");
 hello("Abhijeet", "Pune");
 hello("Abhijeet", "Pune", 411038);

@@ -10,7 +10,7 @@ export class ListComponent implements OnInit {
     selectedPerson: string;
 
     constructor() {
-        this.personList = ["Manish", "Abhijeet", "Abhishek", "Kedar", "Sumeet"];
+        this.personList = ["Herin", "Abhijeet", "Abhishek", "Kedar", "Sumeet"];
     }
 
     ngOnInit() { }

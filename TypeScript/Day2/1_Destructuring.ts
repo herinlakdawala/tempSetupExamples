@@ -70,7 +70,7 @@ var arr = [10, 20, 30, 40, 50];
 // console.log(arr);
 
 var employees = [
-    { id: 1, name: "Manish" },
+    { id: 1, name: "Herin" },
     { id: 2, name: "Ram" },
     { id: 3, name: "Abhijeet" },
     { id: 4, name: "Pravin" },

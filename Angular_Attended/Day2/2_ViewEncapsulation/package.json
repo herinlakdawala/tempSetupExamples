@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --hot",
     "build": "webpack --env prod"
   },
-  "author": "Manish Sharma",
+  "author": "Herin Lakdawala",
   "license": "ISC",
   "devDependencies": {
     "@types/jquery": "^3.3.29",

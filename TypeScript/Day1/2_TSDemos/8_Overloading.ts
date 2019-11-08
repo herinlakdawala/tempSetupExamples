@@ -13,6 +13,6 @@ function Hello(...args: Array<string>) {
 Hello
 
 Hello();
-Hello("Manish");
-// Hello("Manish", "Sharma");
+Hello("Herin");
+// Hello("Herin", "Lakdawala");
 

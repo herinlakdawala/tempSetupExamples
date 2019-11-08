@@ -21,7 +21,7 @@ class Person {
     }
 }
 
-var p1 = new Person("Manish");
+var p1 = new Person("Herin");
 console.log(p1.Name);
 p1.Name = "Abhijeet";
 console.log(p1.Name);

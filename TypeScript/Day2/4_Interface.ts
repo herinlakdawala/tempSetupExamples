@@ -39,7 +39,7 @@
 // }
 
 // var p1: IPerson = {
-//     name: "Manish",
+//     name: "Herin",
 //     age: 34,
 //     greet: function (m) {
 //         return "Hello";

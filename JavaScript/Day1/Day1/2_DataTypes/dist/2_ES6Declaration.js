@@ -6,7 +6,7 @@
 // let a = "ABC";
 // console.log(a);
 
-var i = "Manish";
+var i = "Herin";
 console.log("Before, i is:", i);
 
 for (var _i = 0; _i < 5; _i++) {

@@ -31,7 +31,7 @@
 
 // var emp = new Employee();
 // console.log(emp.getName());
-// emp.setName("Manish");
+// emp.setName("Herin");
 // console.log(emp.getName());
 
 // var emp1 = new Employee("Abhijeet");
@@ -60,7 +60,7 @@
 
 // var emp = new Employee();
 // console.log(emp.Name);
-// emp.Name = "Manish";
+// emp.Name = "Herin";
 // console.log(emp.Name);
 
 // ---------------------------------------------- Parameter Members
@@ -86,7 +86,7 @@
 
 // var emp = new Employee();
 // console.log(emp.Name);
-// emp.Name = "Manish";
+// emp.Name = "Herin";
 // console.log(emp.Name);
 
 // ---------------------------------------------- Static Members
@@ -102,7 +102,7 @@
 //     }
 // }
 
-// var a1 = new BankAccount("ICICI", "Manish");
+// var a1 = new BankAccount("ICICI", "Herin");
 // console.log(a1.BankName);
 // console.log(a1.AccountName);
 
@@ -131,7 +131,7 @@
 
 // BankAccount.BankName = "ICICI";
 
-// var a1 = new BankAccount("Manish");
+// var a1 = new BankAccount("Herin");
 // console.log(a1.BankName);
 // console.log(a1.AccountName);
 
@@ -165,7 +165,7 @@ class BankAccount {
 
 BankAccount.BankName = "ICICI";
 
-var a1 = new BankAccount(1, "Manish");
+var a1 = new BankAccount(1, "Herin");
 console.log("Bank Name: ", a1.BankName);
 console.log("Account Number: ", a1.AccountNumber);
 console.log("Accoun Holder Name: ", a1.AccountName);

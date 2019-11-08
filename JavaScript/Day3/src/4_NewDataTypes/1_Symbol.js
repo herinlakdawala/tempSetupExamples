@@ -59,8 +59,8 @@ function get(color) {
 // var NEW_BLUE = Symbol('BLUE');
 // console.log(get(NEW_BLUE));
 
-var a = Symbol("Manish");
-var b = Symbol("Manish");
+var a = Symbol("Herin");
+var b = Symbol("Herin");
 
 console.log(a == b);
 console.log(a === b);

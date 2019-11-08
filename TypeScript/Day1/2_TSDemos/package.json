@@ -7,7 +7,7 @@
     "compile": "tsc -w",
     "version": "tsc -v"
   },
-  "author": "Manish",
+  "author": "Herin Lakdawala",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^3.4.1"

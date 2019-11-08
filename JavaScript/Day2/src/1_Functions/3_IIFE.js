@@ -8,8 +8,8 @@
 //     console.log("Hello,", name);
 // }
 
-// hello("Manish");
+// hello("Herin");
 
 (function (name) {
     console.log("Hello,", name);
-})("Manish");
+})("Herin");

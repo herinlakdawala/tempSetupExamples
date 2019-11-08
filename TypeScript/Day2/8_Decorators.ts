@@ -60,5 +60,5 @@ class MyPerson {
     }
 }
 
-var c = new MyPerson("Manish");
+var c = new MyPerson("Herin");
 console.log(c);

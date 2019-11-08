@@ -14,7 +14,7 @@ var Person = (function () {
     return Person;
 })();
 
-var p1 = new Person("Manish");
+var p1 = new Person("Herin");
 console.log(p1.getName());
 p1.setName("Abhijeet");
 console.log(p1.getName());

@@ -8,7 +8,7 @@
 // console.log(env);
 var obj = {
   id: 1,
-  name: "Manish"
+  name: "Herin"
 };
 console.log(obj);
 obj.id = 100; // obj = {};

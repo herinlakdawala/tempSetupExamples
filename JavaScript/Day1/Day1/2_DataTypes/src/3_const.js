@@ -7,7 +7,7 @@
 
 // console.log(env);
 
-const obj = { id: 1, name: "Manish" };
+const obj = { id: 1, name: "Herin" };
 
 console.log(obj);
 obj.id = 100;

@@ -1,7 +1,7 @@
 export const person = {
     firstname: {
         label: 'FirstName',
-        value: 'Manish',
+        value: 'Herin',
         type: 'text',
         validation: {
             required: true
@@ -9,7 +9,7 @@ export const person = {
     },
     lastname: {
         label: 'LastName',
-        value: 'Sharma',
+        value: 'Lakdawala',
         type: 'text',
         validation: {
             required: true

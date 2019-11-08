@@ -4,5 +4,5 @@ function Reverse(strOrarr) {
     else
         return strOrarr.slice().reverse();
 }
-console.log(Reverse("Manish"));
+console.log(Reverse("Herin"));
 console.log(Reverse(["PQR", "XYZ", "ABC"]));

@@ -6,7 +6,7 @@
 // Open("Write");
 // Open("ReadWrite");
 
-// Open("Manish");
+// Open("Herin");
 
 enum Mode { Read, Write, ReadWrite }
 
@@ -18,4 +18,4 @@ Open(Mode.Read);
 Open(Mode.Write);
 Open(Mode.ReadWrite);
 
-// Open("Manish");
+// Open("Herin");

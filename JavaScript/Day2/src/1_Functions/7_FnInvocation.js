@@ -8,7 +8,7 @@
 
 // var e1 = {
 //     id: 1,
-//     name: "Manish",
+//     name: "Herin",
 //     display: function () {
 //         console.log(this);
 //     }
@@ -32,7 +32,7 @@ var display = function (x, y) {
 
 var e1 = {
     id: 1,
-    name: "Manish"
+    name: "Herin"
 };
 
 var e2 = {

@@ -16,7 +16,7 @@ class Person {
 
 
 
-var p1 = new Person("Manish");
+var p1 = new Person("Herin");
 console.log(p1.getName());
 p1.setName("Abhijeet");
 console.log(p1.getName());
@@ -27,7 +27,7 @@ p2.setName("Ramakant");
 console.log(p2.getName());
 
 var employees = [
-    { id: 1, name: "Manish" },
+    { id: 1, name: "Herin" },
     { id: 2, name: "Ram" },
     { id: 3, name: "Abhijeet" },
     { id: 4, name: "Pravin" },

@@ -1,4 +1,4 @@
-var name = "Manish";
+var name = "Herin";
 var message = "How are you?";
 
 // // ES5

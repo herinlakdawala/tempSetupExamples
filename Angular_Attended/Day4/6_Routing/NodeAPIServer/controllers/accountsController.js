@@ -6,12 +6,12 @@ module.exports.authenticate = function (req, res, next) {
         password: req.body.password
     };
 
-    if (user.username != "manish") {
+    if (user.username != "herin") {
         res.json({
             success: false,
             message: "Authentication Failed, User not Found..."
         });
-    } else if (user.password != "manish") {
+    } else if (user.password != "herin") {
         res.json({
             success: false,
             message: "Authentication Failed, Wrong Password..."

@@ -311,7 +311,7 @@ article, section, #intro {
 
 #about {
     display: box;
-    background: url(../images/css3logo.png) bottom left, url(../images/ManishPP.jpg) top right, #8D8A8A;
+    background: url(../images/css3logo.png) bottom left, url(../images/HerinPP.jpg) top right, #8D8A8A;
     background-repeat: no-repeat;
     background-size: auto, contain;
 }

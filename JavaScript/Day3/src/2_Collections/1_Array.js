@@ -2,7 +2,7 @@
 // var employees = new Array(3);
 // var employees = [];
 
-// employees[0] = "Manish";
+// employees[0] = "Herin";
 // employees[1] = "Abhijeet";
 // employees[2] = "Ramakant";
 // employees[3] = "Subodh";
@@ -14,7 +14,7 @@
 // }
 
 var employees = [
-    { id: 1, name: "Manish" },
+    { id: 1, name: "Herin" },
     { id: 2, name: "Abhijeet" },
     { id: 3, name: "Ram" },
     { id: 4, name: "Umar" },

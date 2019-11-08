@@ -13,7 +13,7 @@
 
 var person = {
     id: 1,
-    name: "Manish",
+    name: "Herin",
     city: "Pune",
     display: function () {
         console.log(this);

@@ -42,6 +42,6 @@ var MyPerson = (function () {
     ], MyPerson);
     return MyPerson;
 }());
-var c = new MyPerson("Manish");
+var c = new MyPerson("Herin");
 console.log(c);
 //# sourceMappingURL=8_Decorators.js.map
